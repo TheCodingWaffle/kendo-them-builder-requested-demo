@@ -1,0 +1,66 @@
+@use 'tokens' as *;
+@use '@progress/kendo-font-icons/scss/all' as * with (
+
+  $ki-font-url: '@progress/kendo-font-icons/scss/kendo-font-icons.ttf',
+  $ki-embed-font: true,
+
+);
+@use '@progress/kendo-theme-bootstrap/scss/all.scss' as * with (
+
+  $kendo-colors: (  
+    primary: $tb-primary,
+    primary-hover: $tb-primary-hover,
+    secondary: $tb-secondary,
+    primary-active: $tb-primary-active,
+    on-primary: $tb-on-primary,
+    primary-emphasis: $tb-primary-emphasis,
+    primary-subtle: $tb-primary-subtle,
+    success: $tb-success,
+    primary-subtle-hover: $tb-primary-subtle-hover,
+    primary-subtle-active: $tb-primary-subtle-active,
+    primary-on-subtle: $tb-primary-on-subtle,
+    primary-on-surface: $tb-primary-on-surface,
+    secondary-subtle: $tb-secondary-subtle,
+    secondary-subtle-hover: $tb-secondary-subtle-hover,
+    secondary-subtle-active: $tb-secondary-subtle-active,
+    secondary-hover: $tb-secondary-hover,
+    secondary-active: $tb-secondary-active,
+    secondary-emphasis: $tb-secondary-emphasis,
+    secondary-on-subtle: $tb-secondary-on-subtle,
+    on-secondary: $tb-on-secondary,
+    secondary-on-surface: $tb-secondary-on-surface,
+    success-subtle: $tb-success-subtle,
+    success-subtle-hover: $tb-success-subtle-hover,
+    success-subtle-active: $tb-success-subtle-active,
+    success-hover: $tb-success-hover,
+    success-active: $tb-success-active,
+    success-emphasis: $tb-success-emphasis,
+    success-on-subtle: $tb-success-on-subtle,
+    on-success: $tb-on-success,
+    success-on-surface: $tb-success-on-surface,
+    warning-subtle: $tb-warning-subtle,
+    warning-subtle-hover: $tb-warning-subtle-hover,
+    warning-subtle-active: $tb-warning-subtle-active,
+    warning: $tb-warning,
+    warning-hover: $tb-warning-hover,
+    warning-active: $tb-warning-active,
+    warning-emphasis: $tb-warning-emphasis,
+    warning-on-subtle: $tb-warning-on-subtle,
+    on-warning: $tb-on-warning,
+    warning-on-surface: $tb-warning-on-surface,
+    series-b: $tb-series-b,
+    series-b-bold: $tb-series-b-bold,
+    series-b-bolder: $tb-series-b-bolder,
+    series-b-subtle: $tb-series-b-subtle,
+    series-b-subtler: $tb-series-b-subtler,
+  ),
+    $kendo-font-family: $tb-kendo-font-family,
+  $kendo-font-size: $tb-kendo-font-size,
+  $kendo-font-weight-normal: $tb-kendo-font-weight-normal,
+  $kendo-line-height: $tb-kendo-line-height,
+
+);
+@use '@progress/kendo-theme-utils/scss/all.scss' as *;
+@use 'overrides' as *;
+
+@include kendo-theme--styles();
